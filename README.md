@@ -1,4 +1,4 @@
-# plex-db-speedup
+# plex-db-speedup for Plexguide Docker install
 Cleans up Plex databases and increases PRAGMA setting to improve use of large remote video storage
 
 Instructions
