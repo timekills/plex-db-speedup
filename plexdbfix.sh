@@ -40,7 +40,7 @@ echo -e "${C_PURPLE}Starting Maintenance${NO_FORMAT}"
 rm $BACKUPDIR/*
 rm $SQLDUMP
 #
-echo -e "${C_PURPLE}Copying Plex databases${NO_FORMAT}"
+echo -e "${C_PURPLE}Copying Plex databases to /opt/appdata/plex/maintenance ${NO_FORMAT}"
 cp -f "$PLEX_DATABASE" "$BACKUPDIR/com.plexapp.plugins.library.db-$(date +"%Y-%m-%d")"
 cp -f "$PLEX_DATABASE_BLOBS" "$BACKUPDIR/com.plexapp.plugins.library.blobs.db-$(date +"%Y-%m-%d")"
 cp -f "$PLEX_DATABASE_TRAKT" "$BACKUPDIR/com.plexapp.plugins.trakttv.db-$(date +"%Y-%m-%d")"
