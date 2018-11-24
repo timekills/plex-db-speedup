@@ -2,7 +2,7 @@
 #
 ######################################################################################################
 # Cleans up Plex databases and increases PRAGMA setting to improve use of large remote video storage #
-# git clone https://github.com/USERNAME/REPOSITORY_NAME.git                                          #
+# git clone https://github.com/timekills/plex-db-speedup.git                                          #
 ######################################################################################################
 
 PLEX_DATABASE="/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db"
