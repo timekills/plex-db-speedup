@@ -45,13 +45,13 @@ cp -f "$PLEX_DATABASE" "$BACKUPDIR/com.plexapp.plugins.library.db-$(date +"%Y-%m
 cp -f "$PLEX_DATABASE_BLOBS" "$BACKUPDIR/com.plexapp.plugins.library.blobs.db-$(date +"%Y-%m-%d")"
 cp -f "$PLEX_DATABASE_TRAKT" "$BACKUPDIR/com.plexapp.plugins.trakttv.db-$(date +"%Y-%m-%d")"
 #
-echo -e "${C_PURPLE}PRAGMA optimize main database & cache size set to 500000${NO_FORMAT}"
+echo -e "${C_PURPLE}PRAGMA optimize main database & cache size set to 30000${NO_FORMAT}"
 $SQLITE3 "$PLEX_DATABASE" "PRAGMA optimize"
 $SQLITE3 "$PLEX_DATABASE" vacuum
 $SQLITE3 "$PLEX_DATABASE" .dump > "$SQLDUMP"
 rm "$PLEX_DATABASE"
 $SQLITE3 "$PLEX_DATABASE" < "$SQLDUMP"
-$SQLITE3 -header -line "$PLEX_DATABASE" "PRAGMA default_cache_size = 500000"
+$SQLITE3 -header -line "$PLEX_DATABASE" "PRAGMA default_cache_size = 30000"
 $SQLITE3 "$PLEX_DATABASE" "PRAGMA optimize"
 rm "$SQLDUMP"
 #
