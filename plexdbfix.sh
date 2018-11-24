@@ -17,11 +17,11 @@ SQLITE3="/usr/bin/sqlite3"
 SQLDUMP="/tmp/dump.sql"
 BACKUPDIR="/opt/appdata/plex/maintenance"
 
-if [ ! -d "$BACKUPDIR" ]; then
+if [ ! -d "$BACKUPDIR" ] ; then
   mkdir /opt/appdata/plex/maintenance
 fi
 
-if [ ! -e "$SQLDUMP" ]; then
+if [ ! -e "$SQLDUMP" ] ; then
   touch /tmp/dump.sql
 fi
 
