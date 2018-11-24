@@ -5,7 +5,7 @@
 # 1. git clone https://github.com/timekills/plex-db-speedup.git                                      #
 # 2. cd plex-db-speedup                                                                              #
 # 3. chmod a+x plexdbfix.sh                                                                          #
-# 4. ./ plexdbfix.sh                                                                                 #
+# 4. ./plexdbfix.sh                                                                                 #
 ######################################################################################################
 
 PLEX_DATABASE="/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db"
