@@ -5,4 +5,4 @@ Instructions
  1. git clone https://github.com/timekills/plex-db-speedup.git                                      #
  2. cd plex-db-speedup                                                                              #
  3. chmod a+x plexdbfix.sh                                                                          #
- 4. ./ plexdbfix.sh 
+ 4. ./plexdbfix.sh 
