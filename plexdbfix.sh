@@ -72,7 +72,7 @@ rm "$PLEX_DATABASE_TRAKT"
 $SQLITE3 "$PLEX_DATABASE_TRAKT" < "$SQLDUMP"
 $SQLITE3 "$PLEX_DATABASE_TRAKT" "PRAGMA optimize"
 rm "$SQLDUMP"
-chown -R root:root "/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Plug-in Support/Databases/"
+chown -R 1000:1000 "/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Plug-in Support/Databases/"
 #
 rm -rf "/opt/appdata/plex/database/Library/Application Support/Plex Media Server/Codecs/"*
 #
