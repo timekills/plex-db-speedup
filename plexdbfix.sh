@@ -38,9 +38,9 @@ echo -e "${C_PURPLE}Starting Maintenance${NO_FORMAT}"
 #
 echo -e "${C_PURPLE}Checking for sqlite installation${NO_FORMAT}"
 if type sqlite3 >/dev/null 2>&1 ; then
-        echo "${C_SPRINGGREEN3}sqlite already installed.${NO_FORMAT}"
+        echo -e "${C_SPRINGGREEN3}sqlite already installed.${NO_FORMAT}"
 else 
-        echo "${C_PURPLE}sqlite installing...${NO_FORMAT}" && apt update && apt install sqlite
+        echo -e "${C_PURPLE}sqlite installing...${NO_FORMAT}" && apt update && apt install sqlite
 fi
 #
 rm $BACKUPDIR/*
