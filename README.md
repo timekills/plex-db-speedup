@@ -6,9 +6,7 @@ I recommend starting from the /opt/appdata/plex/scripts directory, but your choi
 
 Note: sqlite installation is rquired. Script checks for and installs sqlite if not installed, but be aware it will either have to be installed previously or will be installed during the script execution.
 
-# You may notice a few errors the first time it is run reference "Error: no such collation sequence: naturalsort"
-
-# That is okay; it is cleaned up and the next time it is run you shouldn't see those errors again.
+# You may notice a few errors the first time it is run reference "Error: no such collation sequence: naturalsort" That is okay; it is fixed during the DB clean-up portion and the next time it is run you shouldn't see those errors again.
 
 git clone https://github.com/timekills/plex-db-speedup.git
 
