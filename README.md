@@ -1,7 +1,7 @@
 # plex-db-speedup for Plexguide Docker install
 Cleans up Plex databases and increases PRAGMA setting to improve use of large remote video storage
 
-# Update 13 JAN 18: When I ran this recently it appeared to cause some corruption in the latest/current Plex edition. BACK UP YOUR DATABASE before using until further testing is completed!
+# Update 13 JAN 19: When I ran this recently it appeared to cause some corruption in the latest/current Plex edition. BACK UP YOUR DATABASE before using until further testing is completed!
 
 Note: sqlite installation is required. Script checks for and installs sqlite if not installed, but be aware it will either have to be installed previously or will be installed during the script execution.
 
